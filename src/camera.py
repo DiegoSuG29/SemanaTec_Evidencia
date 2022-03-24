@@ -1,3 +1,9 @@
+#Links de referencia
+# RoseBrock, A. (2014) OpenCV and Python Color Detection. Recuperado el 24/03/22 de: https://pyimagesearch.com/2014/08/04/opencv-python-color-detection/
+# OpenCV. (s.f.) Changing Colorspaces. Recuperado el 24/03/22 de: https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+# OpenCV. (s.f.) Adding a trackbar to our applications. Recuperado el 24/03/22 de: https://docs.opencv.org/3.4/da/d6a/tutorial_trackbar.html
+# Canu, S. (s.f.) Detecting Colors. OpenCV with Python. Recuperado el 24/03/22 de: https://pysource.com/2019/02/15/detecting-colors-hsv-color-space-opencv-with-python/
+
 import numpy as np
 import cv2
 
