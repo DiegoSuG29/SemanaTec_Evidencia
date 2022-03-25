@@ -4,13 +4,16 @@
 # OpenCV. (s.f.) Adding a trackbar to our applications. Recuperado el 24/03/22 de: https://docs.opencv.org/3.4/da/d6a/tutorial_trackbar.html
 # Canu, S. (s.f.) Detecting Colors. OpenCV with Python. Recuperado el 24/03/22 de: https://pysource.com/2019/02/15/detecting-colors-hsv-color-space-opencv-with-python/
 
+#Import Libraries
 import numpy as np
 import cv2
 
 def empty (evt):
     pass
 
+#Set Camera
 cap = cv2.VideoCapture(0)
+#Define trackbars with ranges
 cv2.namedWindow("trackbars",)
 cv2.resizeWindow("trackbars", 640,420)
 cv2.createTrackbar("Matiz Min", "trackbars", 0, 179, empty)
@@ -39,6 +42,7 @@ while True:
     mask = cv2.inRange(hsv, lower, upper )
     img_result = cv2.bitwise_and(frame,frame,mask = mask)
     
+    #Set filters and show them in different windows
     cv2.imshow('frame',frame)
     cv2.imshow("mask", mask)
     cv2.imshow('HSV',hsv)
